@@ -1,0 +1,57 @@
+html, body {
+  color: #FE938C;
+  background: #FFCDB2;
+}
+
+h1 {
+  color: #4281A4;
+}
+
+ul {
+  list-style: none;
+}
+
+.done {
+  color: #EAD2AC;
+  text-decoration: line-through;
+}
+
+.undone {
+  color: #FE938C;
+}
+
+.icon {
+  margin: 6px 10px 6px 0;
+  cursor: pointer;
+}
+
+.close {
+  color: inherit;
+  font-size: 1.2em;
+}
+
+.close:hover {
+  color: #FE938C;
+}
+
+.btn-primary {
+  background-color: #4281A4;
+  border-color: #4281A4;
+}
+
+.btn-primary:hover {
+  background-color: #1D3557;
+  border-color: #1D3557;
+}
+
+.input-group-lg>.input-group-btn>.btn {
+  border-bottom-right-radius: 0;
+}
+
+.input-group-lg>.form-control {
+  border-bottom-left-radius: 0;
+}
+
+.list-group-item:first-child {
+  border-radius: 0;
+}
