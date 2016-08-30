@@ -3,18 +3,13 @@ import React from "react";
 import Todos from "../components/Todos/Todos";
 
 export default class Home extends React.Component {
-  constructor(props){
-    super(props);
-
-    this.state = {
-      initItems: []
-    };
-  }
 
   render() {
     return (
-      <div>
-        <Todos initItems={this.state.initItems}/>
+      <div className="container">
+        <div className="col-md-6 col-md-offset-3">
+          <Todos />
+        </div>
       </div>
     );
   }

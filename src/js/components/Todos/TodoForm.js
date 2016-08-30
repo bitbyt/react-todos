@@ -24,9 +24,11 @@ export default class TodoForm extends React.Component {
   render() {
     return (
       <div>
-        <form ref="form" onSubmit={this.onSubmit}>
-          <input ref="itemName" />
-          <input type='submit' value='Add'/>
+        <form ref="form" className="input-group input-group-lg" onSubmit={this.onSubmit}>
+          <input type="text" ref="itemName" className="form-control input-lg" placeholder="do me good..."/>
+          <span className="input-group-btn">
+            <input type='submit' className="btn btn-primary" value='Add'/>
+          </span>
         </form>
       </div>
     );
