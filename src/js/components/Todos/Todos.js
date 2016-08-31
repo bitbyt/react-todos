@@ -2,9 +2,14 @@ import React from "react";
 import TodoList from "./TodoList";
 import TodoForm from "./TodoForm";
 import * as firebase from "firebase";
-var config = require('./config').config;
 
 // Initialize Firebase
+var config = {
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: "testtodo-adb0a.firebaseapp.com",
+  databaseURL: "https://testtodo-adb0a.firebaseio.com",
+  storageBucket: "testtodo-adb0a.appspot.com",
+};
 firebase.initializeApp(config);
 
 //create empty array to store all todos

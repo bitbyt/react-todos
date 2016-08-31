@@ -1,6 +1,9 @@
 var debug = process.env.NODE_ENV !== "production";
 var webpack = require('webpack');
 var path = require('path');
+var dotenv = require('dotenv');
+
+dotenv.load();
 
 module.exports = {
   context: path.join(__dirname, "src"),
