@@ -15,6 +15,7 @@
     "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "firebase": "^3.3.0",
+    "hoist-non-react-statics": "^1.2.0",
     "react": "^0.14.6",
     "react-dom": "^0.14.6",
     "react-router": "^2.7.0",
