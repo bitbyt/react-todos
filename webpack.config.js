@@ -9,8 +9,8 @@ module.exports = {
   context: path.join(__dirname, "src"),
   devtool: debug ? "inline-sourcemap" : null,
   devServer: {
-    inoine: true,
-    port: 1337
+    inline: true,
+    port: 1234
   },
   entry: "./js/client.js",
   module: {

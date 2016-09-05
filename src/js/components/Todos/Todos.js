@@ -59,7 +59,8 @@ export default class Todos extends React.Component {
   }
 
   removeItem(itemIndex) {
-    var item = this.state.todoItems[itemIndex];
+    let todoItems = [...this.state.todoItems];
+    let item = todoItems[itemIndex];
     console.log(item.index);
     firebase.database().ref('todo/' + item.index).remove();
     //splice to remove the todo according to the index passed from the todoItem props
